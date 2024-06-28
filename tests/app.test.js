@@ -9,7 +9,7 @@ beforeAll((done) => {
 		done();
 	});
 });
-afterAll((done) =.{
+afterAll((done) =>{
 	server.close(done);
 });
 
