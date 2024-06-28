@@ -4,7 +4,7 @@ tools{
 nodejs 'NodeJS 22'
 }
 environment{
-TEST_PORT=='3001'
+TEST_PORT='3001'
 }
 stages{
 stage('Install Dependendcies'){
