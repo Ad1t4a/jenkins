@@ -2,14 +2,12 @@ const request =require("supertest");
 const {app}=require("../app");
 let server;
 beforeAll((done) => {
-	const PORT =process.env.TEST_PORT ||3001;
+	const PORT =process.env.TEST_PORT||3001;
 	process.env.PORT=PORT;
 	server=app.listen(PORT,()=>{
 		console.log(`Test server is running on port ${PORT}`);
 		done();
-	}
-	);
-});
+	});
 });
 afterAll((done) =.{
 	server.close(done);
